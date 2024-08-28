@@ -227,7 +227,18 @@ public class String1
      * conCat("abc", "") â†’ "abc"
      */
     public String conCat(String a, String b) {
-        return unimplemented;
+        if (a.length() == 0){
+            return b;
+        }
+        else if (b.length() == 0){
+            return a;
+        }
+        else if (a.substring(2).equals(b.substring(0,1))){
+            return a.substring(0,3) + b.substring(1,3);
+        }
+        else{
+            return a + b;
+        }
     }
 
     /*
