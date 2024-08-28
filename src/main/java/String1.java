@@ -101,7 +101,12 @@ public class String1
      * firstTwo("ab") â†’ "ab"
      */
     public String firstTwo(String str) {
-        return unimplemented;
+        if (str.length() < 2){
+            return str;
+        }
+        else{
+            return str.substring(0,2);
+        }
     }
 
     /*
