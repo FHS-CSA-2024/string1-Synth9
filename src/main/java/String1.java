@@ -87,8 +87,13 @@ public class String1
      * extraEnd("Hi") â†’ "HiHiHi"
      */
     public String extraEnd(String str) {
+        if (str.length() == 2){
+            return str + str + str;
+        }
+        else{
         String newStr = str.substring(str.length() - 2);
         return newStr + newStr + newStr;
+        }
     }
 
     /*
@@ -139,7 +144,12 @@ public class String1
      * comboString("aaa", "b") â†’ "baaab"
      */
     public String comboString(String a, String b) {
-        return unimplemented;
+        if (a.length() > b.length()){
+            return b + a + b;
+        }
+        else{
+            return a + b + a;
+        }
     }
 
     /*
@@ -150,7 +160,14 @@ public class String1
      * middleThree("solving") â†’ "lvi"
      */
     public String middleThree(String str) {
-        return unimplemented;
+        if (str.length() == 3){
+            return str;
+        }
+        else{
+            int middleStart = str.length() / 3;
+            int middleEnd = middleStart + 3;
+            return str.substring(middleStart, middleEnd);
+        }
     }
 
     /*
