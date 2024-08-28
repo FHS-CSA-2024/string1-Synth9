@@ -195,7 +195,7 @@ public class String1
      * left2("Hi") â†’ "Hi"
      */
     public String left2(String str) {
-        return unimplemented;
+        return str.substring(2) + str.substring(0,2);
     }
 
     /*
