@@ -178,7 +178,13 @@ public class String1
      * extraFront("H") â†’ "HHH"
      */
     public String extraFront(String str) {
-        return unimplemented;
+        if (str.length() < 2){
+            return str + str + str;
+        }
+        else{
+            String newStr = str.substring(0,2);
+            return newStr + newStr + newStr;
+        }
     }
 
     /*
