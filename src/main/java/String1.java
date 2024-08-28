@@ -87,7 +87,8 @@ public class String1
      * extraEnd("Hi") â†’ "HiHiHi"
      */
     public String extraEnd(String str) {
-        return unimplemented;
+        String newStr = str.substring(str.length() - 2);
+        return newStr + newStr + newStr;
     }
 
     /*
