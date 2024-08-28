@@ -252,7 +252,15 @@ public class String1
      *minCat("java", "Hello") â†’ "javaello"
      */
     public String minCat(String a, String b) {
-        return unimplemented;
+        if (a.length() == b.length()){
+            return a + b;
+        }
+        else if (a.length() > b.length()){
+            return a.substring(a.length() - b.length()) + b;
+        }
+        else{
+            return a + b.substring(b.length() - a.length());
+        }
     }
 
     /*
